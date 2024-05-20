@@ -8,9 +8,9 @@ class DailyAgenda:
     async def request(agent_name: str, agent_summary: str, agent_wake_up_hour: int, world_nodes: str, relevant_memories: str):
         response = await OpenAIClient.ask(
             messages=[
-                SystemMessage('You are controlling an NPC inside a video game simulation.'),
-                SystemMessage('Use a 24 hour format.'),
-                SystemMessage(f'The world is represented as a tree and it contains the following, where the first '
+                UserMessage('You are controlling an NPC inside a video game simulation.'),
+                UserMessage('Use a 24 hour format.'),
+                UserMessage(f'The world is represented as a tree and it contains the following, where the first '
                               f'element is the root: {world_nodes}'),
                 UserMessage(f'A summary of relevant memories for the agent: {relevant_memories}') if len(
                     relevant_memories) > 0 else None,

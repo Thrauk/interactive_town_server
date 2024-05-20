@@ -11,11 +11,6 @@ router = APIRouter(
 )
 
 
-@router.post("/daily_schedule")
-async def daily_schedule(data: DailyPlanData):
-    return await processor.get_daily_schedule(data)
-
-
 @router.post("/hourly_schedule")
 async def hourly_schedule(data: HourlyAgendaData):
     return await processor.get_hourly_schedule(data)
@@ -29,11 +24,6 @@ async def split_schedule(data: SplitScheduleData):
 @router.post("/change_location")
 async def change_location(data: ChangeLocationData):
     return await processor.change_location(data)
-
-
-@router.post("/initialize_agent")
-async def initialize_agent(data: InitializeAgentData):
-    return await processor.initialize_agent(data)
 
 
 @router.post("/plan_today")
@@ -80,7 +70,27 @@ async def reset_instance():
 async def reset_instance(data: ObserveData):
     return await processor.observe(data)
 
+
 @router.post("/dump_actions")
 async def dump_actions(data: DumpMemoryData):
     return await processor.dump_actions(data)
 
+
+@router.post("/do_now_v2")
+async def dump_actions(data: WhatToDoNowData):
+    return await processor.what_to_do_now_v2(data)
+
+
+@router.post("/daily_schedule")
+async def daily_schedule(data: DailyPlanData):
+    return await processor.get_daily_schedule(data)
+
+
+@router.post("/initialize_agent")
+async def initialize_agent(data: InitializeAgentData):
+    return await processor.initialize_agent(data)
+
+
+@router.post("/emulate_day")
+async def emulate_day(data: WhatToDoNowData):
+    return await processor.emulate_day(data)

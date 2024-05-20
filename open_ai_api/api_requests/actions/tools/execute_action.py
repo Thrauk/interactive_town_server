@@ -13,17 +13,19 @@ availableActions = [
     'brush_teeth',
     'look_mirror',
     'change_clothes',
-    'workout',
+    'physical_exercise',
     'stretch',
     'dance',
     'eat',
     #'make_breakfast',
     'cook',
     'use_fridge',
-    'move_to',
+    # 'move_to',
     'read',
     'drink',
     'greet',
+    'get_food_ingredients',
+    'work',
 
 ]
 

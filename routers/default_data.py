@@ -1,8 +1,6 @@
 DEFAULT_AGENT_ID = 'john_smith'
 DEFAULT_AGENT_NAME = 'John Smith'
-DEFAULT_AGENT_SUMMARY = ('Name:John Smith Traits: friendly,curious,brave,extrovert Description: John Smith is a firefighter '
-                         'for the Artificial World FD. He likes to read, watch movies and listen to music. He has to spend a '
-                         'few days at home.')
+DEFAULT_AGENT_SUMMARY = ('John Smith works from home in IT. He likes to spend his time working out, watching TV and going to the park. He works 8 hour a day. He has a dog. He usually eats 3 meals a day He goes to sleep at 22:00.')
 DEFAULT_AGENT_WAKE_UP_HOUR = 7
 
 DEFAULT_WORLD_NODES = ('(TownCentre:(JohnHouse:(Hallway,LivingRoom:(TV),Bathroom:(Shower,ToothbrushCup,WashingMachine,'

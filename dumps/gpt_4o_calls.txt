@@ -1,0 +1,371 @@
+"Morning routine in the bathroom. done at hour: 7:15",
+  "Making breakfast. done at hour: 7:35",
+  "Start working on IT tasks. done at hour: 8:15",
+  "Continue working on IT tasks. done at hour: 9:15",
+  "Preparing lunch. done at hour: 11:15",
+  "Having lunch. done at hour: 12:5",
+  "Relaxing after lunch. done at hour: 12:45",
+  "Continue working on IT tasks. done at hour: 13:40",
+  "Prepare for a workout. done at hour: 14:40",
+  "Taking a short break to watch TV. done at hour: 15:10",
+  "Continue working on IT tasks. done at hour: 15:30",
+  "Stretching and light physical exercise. done at hour: 16:30",
+  "Preparing a snack. done at hour: 16:60",
+  "Workout session. done at hour: 17:30",
+  "Preparing and having dinner. done at hour: 18:15",
+  "Relaxation and TV Time done at hour: 19:5",
+  "Visit the park and relax. done at hour: 20:5",
+  "Wind down and prepare for bed. done at hour: 21:5",
+  "Wind down and prepare for bed. done at hour: 21:15",
+  "Relax on the bed and prepare for sleep. done at hour: 21:25",
+  "Go to sleep. done at hour: 22:45"
+
+
+Agent manager: initialized agent Agent Name: John Smith, Summary: John Smith works from home in IT. He likes to spend his time working out, watching TV and going to the park. He usually eats 3 meals a day He goes to sleep at 22:00., Stored Memories: 0
+INFO:     127.0.0.1:57559 - "GET /flutter_service_worker.js?v=2451829546 HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57556 - "POST /agent/initialize_agent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57568 - "GET /flutter_service_worker.js?v=2451829546 HTTP/1.1" 404 Not Found
+Relevant memory summary: John Smith plans to work from home in IT, work out, watch TV, and visit the park. He will have 3 meals and go to sleep at 22:00.
+INFO:     127.0.0.1:57559 - "POST /agent/daily_schedule HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57575 - "GET /flutter_service_worker.js?v=2451829546 HTTP/1.1" 404 Not Found
+Relevant memory summary: John Smith woke up at 7:15.
+{
+    "location" : "TownCentre:JohnHouse:Bathroom",
+    "task" : "Morning routine in the bathroom.",
+    "actions" : [
+        {
+            "action" : "shower",
+            "duration" : 10
+        },
+        {
+            "action" : "brush_teeth",
+            "duration" : 5
+        },
+        {
+            "action" : "look_mirror",
+            "duration" : 5
+        }
+    ],
+    "reason" : "I just woke up and need to freshen up to start my day."
+}
+Relevant memory summary: Time: 7:15. John Smith woke up and started his day.
+{
+    "location" : "TownCentre:JohnHouse:Kitchen",
+    "task" : "Making breakfast.",
+    "actions" : [
+        {
+            "action" : "make_coffee",
+            "duration" : 5
+        },
+        {
+            "action" : "use_fridge",
+            "duration" : 5
+        },
+        {
+            "action" : "cook",
+            "duration" : 10
+        },
+        {
+            "action" : "eat",
+            "duration" : 20
+        }
+    ],
+    "reason" : "I have just finished my morning routine and now I need to prepare and have breakfast to start my day."
+}
+Relevant memory summary: John Smith woke up at 7:15.
+{
+    "location" : "TownCentre:JohnHouse:LivingRoom",
+    "task" : "Start working on IT tasks.",
+    "actions" : [
+        {
+            "action" : "sit",
+            "duration" : 5
+        },
+        {
+            "action" : "read",
+            "duration" : 55
+        }
+    ],
+    "reason" : "It's time to start my morning work session from home."
+}
+Relevant memory summary: Time: 7:15. John Smith woke up in his Bedroom and went to the Kitchen to prepare breakfast.
+{
+    "location" : "TownCentre:JohnHouse:LivingRoom",
+    "task" : "Continue working on IT tasks.",
+    "actions" : [
+        {
+            "action" : "sit",
+            "duration" : 120
+        }
+    ],
+    "reason" : "I need to continue my work from home session as planned in my daily agenda."
+}
+Relevant memory summary: John Smith woke up at 7:15.
+{
+    "location" : "TownCentre:JohnHouse:Kitchen",
+    "task" : "Preparing lunch.",
+    "actions" : [
+        {
+            "action" : "use_fridge",
+            "duration" : 5
+        },
+        {
+            "action" : "cook",
+            "duration" : 20
+        },
+        {
+            "action" : "eat",
+            "duration" : 25
+        }
+    ],
+    "reason" : "It's almost lunchtime, and I need to prepare and eat lunch before continuing with my work."
+}
+Relevant memory summary: John Smith woke up at 7:15.
+{
+    "location" : "TownCentre:JohnHouse:Kitchen",
+    "task" : "Having lunch.",
+    "actions" : [
+        {
+            "action" : "eat",
+            "duration" : 30
+        },
+        {
+            "action" : "drink",
+            "duration" : 10
+        }
+    ],
+    "reason" : "It's lunchtime and I need to eat and hydrate."
+}
+Relevant memory summary: John Smith woke up at 7:15.
+{
+    "location" : "TownCentre:JohnHouse:LivingRoom",
+    "task" : "Relaxing after lunch.",
+    "actions" : [
+        {
+            "action" : "sit",
+            "duration" : 10
+        },
+        {
+            "action" : "watch_tv",
+            "duration" : 45
+        }
+    ],
+    "reason" : "I just finished lunch and want to relax before starting my afternoon work session."
+}
+Relevant memory summary: John Smith woke up at 07:15.
+{
+    "location" : "TownCentre:JohnHouse:LivingRoom",
+    "task" : "Continue working on IT tasks.",
+    "actions" : [
+        {
+            "action" : "sit",
+            "duration" : 60
+        }
+    ],
+    "reason" : "It's time to continue my work from home for the afternoon session."
+}
+Relevant memory summary: John Smith woke up at 07:15.
+{
+    "location" : "TownCentre:JohnHouse:Hallway",
+    "task" : "Prepare for a workout.",
+    "actions" : [
+        {
+            "action" : "stretch",
+            "duration" : 10
+        },
+        {
+            "action" : "physical_exercise",
+            "duration" : 20
+        }
+    ],
+    "reason" : "I need to take a break from work and get some physical activity."
+}
+Relevant memory summary: John Smith woke up at 07:15.
+{
+    "location" : "TownCentre:JohnHouse:LivingRoom:TV",
+    "task" : "Taking a short break to watch TV.",
+    "actions" : [
+        {
+            "action" : "watch_tv",
+            "duration" : 20
+        }
+    ],
+    "reason" : "I have been working on IT tasks for a while and need a short break to relax."
+}
+Relevant memory summary: 7:15 - John Smith woke up in his Bedroom.
+7:30 - John brushed his teeth in the Bathroom.
+7:45 - John had breakfast in the Kitchen.
+8:00 - John started working in the LivingRoom.
+12:00 - John had lunch in the Kitchen.
+12:30 - John watched TV in the LivingRoom.
+13:00 - John went to the Park and sat on Bench_1.
+14:00 - John returned home and worked out in the Hallway.
+15:00 - John took a shower in the Bathroom.
+15:30 - John resumed working in the LivingRoom.
+{
+    "location" : "TownCentre:JohnHouse:LivingRoom",
+    "task" : "Continue working on IT tasks.",
+    "actions" : [
+        {
+            "action" : "sit",
+            "duration" : 60
+        }
+    ],
+    "reason" : "I need to continue my work from home as part of my afternoon session."
+}
+Relevant memory summary: John Smith woke up at 7:15.
+{
+    "location" : "TownCentre:JohnHouse:Hallway",
+    "task" : "Stretching and light physical exercise.",
+    "actions" : [
+        {
+            "action" : "stretch",
+            "duration" : 10
+        },
+        {
+            "action" : "physical_exercise",
+            "duration" : 20
+        }
+    ],
+    "reason" : "I need to take a break from work and get some physical activity."
+}
+Relevant memory summary: John Smith woke up at 07:15.
+{
+    "location" : "TownCentre:JohnHouse:Kitchen",
+    "task" : "Preparing a snack.",
+    "actions" : [
+        {
+            "action" : "use_fridge",
+            "duration" : 5
+        },
+        {
+            "action" : "cook",
+            "duration" : 10
+        },
+        {
+            "action" : "eat",
+            "duration" : 15
+        }
+    ],
+    "reason" : "I need a quick snack to refuel after my light physical exercise."
+}
+Relevant memory summary: John Smith woke up at 7:15.
+{
+    "location" : "TownCentre:JohnHouse:Hallway",
+    "task" : "Workout session.",
+    "actions" : [
+        {
+            "action" : "physical_exercise",
+            "duration" : 30
+        },
+        {
+            "action" : "stretch",
+            "duration" : 15
+        }
+    ],
+    "reason" : "It's time for my daily workout session to stay fit and healthy."
+}
+Relevant memory summary: John Smith woke up at 07:15.
+{
+    "location" : "TownCentre:JohnHouse:Kitchen",
+    "task" : "Preparing and having dinner.",
+    "actions" : [
+        {
+            "action" : "use_fridge",
+            "duration" : 5
+        },
+        {
+            "action" : "cook",
+            "duration" : 20
+        },
+        {
+            "action" : "eat",
+            "duration" : 25
+        }
+    ],
+    "reason" : "It's dinner time and I need to prepare and have my evening meal."
+}
+Relevant memory summary: John Smith woke up at 07:15. He had breakfast in the Kitchen, using the CoffeeMachine and Toaster. He worked from home in the LivingRoom. He took a break to work out in the Park, using Bench_1. He had lunch in the Kitchen, using the Table and Fridge. He watched TV in the LivingRoom. He took a shower in the Bathroom. He had dinner in the Kitchen, using the Oven. He is currently in the LivingRoom watching TV.
+{
+    "location" : "TownCentre:JohnHouse:LivingRoom",
+    "task" : "Relaxation and TV Time",
+    "actions" : [
+        {
+            "action" : "watch_tv",
+            "duration" : 60
+        }
+    ],
+    "reason" : "It's time to unwind and relax after dinner by watching some TV."
+}
+Relevant memory summary: John Smith woke up at 07:15.
+{
+    "location" : "TownCentre:JohnHouse:Entrance:Park:Bench_1",
+    "task" : "Visit the park and relax.",
+    "actions" : [
+        {
+            "action" : "sit",
+            "duration" : 60
+        }
+    ],
+    "reason" : "I want to spend some time outdoors and relax in the park."
+}
+Relevant memory summary: John Smith woke up at 7:15.
+{
+    "location" : "TownCentre:JohnHouse:Bathroom",
+    "task" : "Wind down and prepare for bed.",
+    "actions" : [
+        {
+            "action" : "brush_teeth",
+            "duration" : 5
+        },
+        {
+            "action" : "look_mirror",
+            "duration" : 5
+        }
+    ],
+    "reason" : "It's time to wind down and prepare for bed."
+}
+Relevant memory summary: John Smith woke up at 07:15. He had breakfast in the Kitchen, then worked from home in the LivingRoom. He took breaks to work out and watch TV. He had lunch and dinner in the Kitchen. In the evening, he went to the Park and sat on Bench_1. He returned home, watched TV, and prepared for bed. He went to sleep at 22:00.
+{
+    "location" : "TownCentre:JohnHouse:Bathroom",
+    "task" : "Wind down and prepare for bed.",
+    "actions" : [
+        {
+            "action" : "brush_teeth",
+            "duration" : 5
+        },
+        {
+            "action" : "look_mirror",
+            "duration" : 5
+        }
+    ],
+    "reason": "It's time to wind down and prepare for bed."
+}
+Relevant memory summary: John Smith woke up at 7:15.
+{
+    "location" : "TownCentre:JohnHouse:Bedroom",
+    "task" : "Relax on the bed and prepare for sleep.",
+    "actions" : [
+        {
+            "action" : "read",
+            "duration" : 20
+        },
+        {
+            "action" : "sleep",
+            "duration" : 60
+        }
+    ],
+    "reason" : "It's time to wind down and prepare for bed to ensure a good night's sleep."
+}
+Relevant memory summary: John Smith woke up at 7:15.
+{
+    "location" : "TownCentre:JohnHouse:Bedroom:Bed",
+    "task" : "Go to sleep.",
+    "actions" : [
+        {
+            "action" : "sleep",
+            "duration" : 480
+        }
+    ],
+    "reason" : "It's 22:00, my usual bedtime."
+}

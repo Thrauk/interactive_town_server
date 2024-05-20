@@ -38,8 +38,6 @@ class MemoryStorage:
         result = ''
         context_embeddings = await EmbeddingClient.encode(context)
 
-        result += ''
-
         for memory in self.memories:
             cosine_sim = cosine_similarity(context_embeddings, memory.embeddings)
             minutes_passed = (seconds_from_start//60 - memory.last_access_in_game_time//60)# // 60
@@ -54,7 +52,7 @@ class MemoryStorage:
                            f'Decay value: {decay_value}\n'
                            f'Importance: {memory.importance}\n'
                            f'Score: {score}\n\n')
-                print(message)
+                # print(message)
 
         return result[:max_memories]
 

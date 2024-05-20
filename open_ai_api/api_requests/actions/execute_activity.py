@@ -11,7 +11,7 @@ class ExecuteActivity:
     async def request(action: str, agent_name: str, agent_summary: str, world_nodes: str, current_location: str, duration: int, action_type: str):
         response = await GenericAction.request(
             messages=[
-                SystemMessage(f'The world is represented as a tree and it contains the following, where the first '
+                UserMessage(f'The world is represented as a tree and it contains the following, where the first '
                               f'element is the root: {world_nodes}'),
                 UserMessage(f'You are controlling agent: {agent_name}'),
                 UserMessage(f'Summary of the controlled agent: {agent_summary}'),

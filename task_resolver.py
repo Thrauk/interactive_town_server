@@ -65,3 +65,11 @@ class TaskResolver(ABC):
     @abstractmethod
     async def dump_actions(self, data: DumpMemoryData) -> Any:
         pass
+
+    @abstractmethod
+    async def what_to_do_now_v2(self, data: WhatToDoNowData) -> Any:
+        pass
+
+    @abstractmethod
+    async def emulate_day(self, data: WhatToDoNowData) -> Any:
+        pass

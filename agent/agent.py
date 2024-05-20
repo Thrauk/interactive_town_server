@@ -13,7 +13,9 @@ class Agent:
         self.current_location = current_location
         self.memory_storage = MemoryStorage()
         self.current_plan = {}
+        self.current_tasks = []
         self.action_history = []
+        self.daily_schedule = ''
 
     async def add_memory(self, description: str, importance: int, seconds_since_game_started: int, embeddings: List[float]):
         """Asynchronously add a memory to the agent's memory storage."""

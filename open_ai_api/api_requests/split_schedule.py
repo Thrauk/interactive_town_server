@@ -14,9 +14,10 @@ class SplitSchedule:
                 SystemMessage('Use a 24 hour format.'),
                 SystemMessage(f'The world is represented as a tree and it contains the following, where the first '
                               f'element is the root: {world_nodes}'),
-                UserMessage(f'A brief summary of the controlled agent: {agent_summary}'),
+                SystemMessage(f'A brief summary of the controlled agent: {agent_summary}'),
+                SystemMessage(f'Only give the output as instructed, dont give any additional text'),
                 UserMessage(f"The agent planned to {action_description} for the next hour. If possible, split this task into "
-                            f"x minute chunks, that added, make a full 60 min hour. Format the output like this: [['chunk "
+                            f"x minute chunks, that added, make a full 60 min hour. Format the output like this. The time to travel to a location should also be included in the time spent doing a task.: [['chunk "
                             f"description', 10], ['chunk 2 description', 15], ...]"),
             ],
         )

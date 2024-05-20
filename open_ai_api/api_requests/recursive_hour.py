@@ -22,13 +22,16 @@ class RecursiveHour:
                 SystemMessage(
                     f'Try not to repeat the recent actions in a short period of time. Make actions seem believable for their specified hour.'
                 ),
-                UserMessage(f'A summary of relevant memories for the agent: {relevant_memories}') if len(
+                SystemMessage(
+                    f'Actions should reflect a realistic human behaviour based on the memories and the previous actions. For example, a human would not repeat the exact same action again after one hour.'
+                ),
+                SystemMessage(f'A summary of relevant memories for the agent: {relevant_memories}') if len(
                     relevant_memories) > 0 else None,
-                UserMessage(f'Action history: {recent_actions}'),
-                UserMessage(f'{agent_name} usually wakes up at {agent_wake_up_hour} and starts the morning routine.'),
-                UserMessage(f'A brief summary of the controlled agent: {agent_summary}'),
-                UserMessage(f"It is day {day_number} and hour {current_hour}. Describe in a few words what is the agent doing "
-                            f"until next hour, taking into account his memories."),
+                SystemMessage(f'Most recent actions: {recent_actions}'),
+                SystemMessage(f'{agent_name} usually wakes up at {agent_wake_up_hour} and starts the morning routine.'),
+                SystemMessage(f'A brief summary of the controlled agent: {agent_summary}'),
+                UserMessage(f"It is day {day_number} and hour {current_hour}. Describe in a few words what is the agent planning to do "
+                            f"until next hour, taking into account his memories. Mention the time interval for the plan. The agent can do one or multiple tasks in an hour."),
             ],
         )
         return response.content
