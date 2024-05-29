@@ -17,7 +17,8 @@ class SplitSchedule:
                 SystemMessage(f'A brief summary of the controlled agent: {agent_summary}'),
                 SystemMessage(f'Only give the output as instructed, dont give any additional text'),
                 UserMessage(f"The agent planned to {action_description} for the next hour. If possible, split this task into "
-                            f"x minute chunks, that added, make a full 60 min hour. Format the output like this. The time to travel to a location should also be included in the time spent doing a task.: [['chunk "
+                            f"x minute chunks, that added, make a full 60 min hour. Format the output like this. The time to "
+                            f"travel to a location should also be included in the time spent doing a task.: [['chunk"
                             f"description', 10], ['chunk 2 description', 15], ...]"),
             ],
         )

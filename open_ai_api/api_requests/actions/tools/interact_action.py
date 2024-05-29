@@ -9,8 +9,10 @@ InteractAction = ToolFunction(
     parameters={
         'destination': {
             'type': 'string',
-            'description': 'The destination object that we want our agent to interact with, given as a full path in the WorldTree from '
-                           'the root of the WorldTree to the target itself, separated by : and always starts with the root. You must only use locations from the worldTree without altering or adding anything.'
+            'description': 'The destination object that we want our agent to interact with, given as a full path in the '
+                           'WorldTree from'
+                           'the root of the WorldTree to the target itself, separated by : and always starts with the root. '
+                           'You must only use locations from the worldTree without altering or adding anything.'
         },
         'speed': {
             'type': 'integer',

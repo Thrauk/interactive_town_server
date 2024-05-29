@@ -22,17 +22,11 @@ class OpenAIClient:
             elif isinstance(message, UserMessage):
                 user_messages += message.content + ' '
 
-        # final_messages = [
-        #     SystemMessage(system_messages).json(),
-        #     UserMessage(user_messages).json(),
-        # ]
-
         final_messages = system_messages + [UserMessage(user_messages).json()]
 
         response = await OpenAIClient.client.chat.completions.create(
             model=model,
             max_tokens=max_tokens,
-            # messages=list(map(lambda x: x.json(), processed_messages)),
             messages=final_messages,
             tools=tools,
             temperature=0.001

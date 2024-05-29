@@ -507,6 +507,10 @@ class GptTaskResolver(TaskResolver, ABC):
         )
 
         agent.action_history.append(f'{task.task} done at hour: {current_hour}:{current_minute}')
+
+        for action in task.actions:
+            agent.action_history.append(f'{action.action} done at hour: {current_hour}:{current_minute}')
+
         return task
 
         # tasks = Tasks(**next_plan_json)

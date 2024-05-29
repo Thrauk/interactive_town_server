@@ -1,6 +1,6 @@
 from open_ai_api.api_requests.actions.tools.tool_function import ToolFunction
 
-availableActions = [
+availableActionsModern = [
     'sit',
     # 'lay',
     'sleep',
@@ -28,6 +28,39 @@ availableActions = [
     'work',
 
 ]
+
+availableActions = [
+    'sit',
+    # 'lay',
+    'sleep',
+    'shower',
+    # 'make_coffee',
+    # 'watch_tv',
+    #'make_bbq',
+    # 'throw_thrash',
+    # 'wash_clothes',
+    # 'brush_teeth',
+    # 'look_mirror',
+    'change_clothes',
+    'physical_exercise',
+    'stretch',
+    # 'dance',
+    'eat',
+    #'make_breakfast',
+    'cook',
+    # 'use_fridge',
+    # 'move_to',
+    'read',
+    'drink',
+    # 'greet',
+    'get_food_ingredients',
+    'use_forge_furnace',
+    'use_anvil',
+    'gardening',
+    'feed_animals'
+
+]
+
 
 ExecuteAction = ToolFunction(
     name='ExecuteCustomAction',

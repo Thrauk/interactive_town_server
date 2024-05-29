@@ -32,7 +32,7 @@ class NextAction:
         response = await OpenAIClient.ask(
             messages=[
                 UserMessage(f'The world is represented as a tree and it contains the following, where the first '
-                              f'element is the root: {world_nodes}'),
+                            f'element is the root: {world_nodes}'),
                 UserMessage(f'Take into account previous information about memories and past actions.'),
                 UserMessage(f'The selected action must be something believable. Avoid repeating actions.'),
                 UserMessage(f'You are controlling agent: {agent_name}'),
