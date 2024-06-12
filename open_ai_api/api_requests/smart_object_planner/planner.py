@@ -122,22 +122,28 @@ class Planner:
                             f'element is the root: {agent.world_nodes}'),
                 SystemMessage(f'Keep the answer simple and precise, using only one sentence.'),
                 SystemMessage(
-                    f'Try not to repeat the recent actions in a short period of time. Make actions seem believable for their specified hour.'
+                    f'Try not to repeat the recent actions in a short period of time. Make actions seem believable for their '
+                    f'specified hour.'
                 ),
                 SystemMessage(
-                    f'Actions should reflect a realistic human behaviour based on the memories and the previous actions. For example, a human would not repeat the exact same action again after one hour.'
+                    f'Actions should reflect a realistic human behaviour based on the memories and the previous actions. For '
+                    f'example, a human would not repeat the exact same action again after one hour.'
                 ),
                 SystemMessage(f'A summary of relevant memories for the agent: {relevant_memories}') if len(
                     relevant_memories) > 0 else None,
-                SystemMessage(f'Most recent actions: {recent_actions}. The agent has to take this actions into account, avoiding repeating a action without reason.'),
+                SystemMessage(f'Most recent actions: {recent_actions}. The agent has to take this actions into account, '
+                              f'avoiding repeating a action without reason.'),
                 SystemMessage(f'His plan for today: {today_plan}. He should take this plan into account when making decisions.'),
                 SystemMessage(f'{agent.name} usually wakes up at {agent.wake_up_hour} and starts the morning routine.'),
                 SystemMessage(f'A brief summary of the controlled agent: {agent.summary}'),
                 SystemMessage(f'At the end of the day or plan, the agent must go to sleep.'),
-                SystemMessage(f'Give the answer as a JSON following this template: {template}. Only send the JSON response without using any other text.'),
-                SystemMessage(f"Try to split the task in multiple actions if possible. The final action used in the day should be sleep."),
+                SystemMessage(f'Give the answer as a JSON following this template: {template}. Only send the JSON response '
+                              f'without using any other text.'),
+                SystemMessage(f"Try to split the task in multiple actions if possible. The final action used in the day "
+                              f"should be sleep."),
                 UserMessage(
-                    f"It is day {day_number} and hour {current_hour}. Using the required format, describe what {agent.name} is planning to do now and how is he going to do it."),
+                    f"It is day {day_number} and hour {current_hour}. Using the required format, describe what {agent.name} "
+                    f"is planning to do now and how is he going to do it."),
             ],
         )
         return response.content

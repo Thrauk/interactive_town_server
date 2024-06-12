@@ -13,7 +13,7 @@ class RelevantMemorySummary:
                 SystemMessage(f'The world is represented as a tree and it contains the following, where the first '
                               f'element is the root: {world_nodes}'),
                 SystemMessage(f'Give only the answer and avoid giving any extra explanations or dialogue.'),
-                SystemMessage(f'The memories belong to {agent_name}.'),# Quick summary for this person: {agent_summary}'),
+                SystemMessage(f'The memories belong to {agent_name}.'),
                 SystemMessage(f'The time now is: {current_time}.'),
                 UserMessage(f'Generate a summary of these memories {relevant_memories}. The summary must retain'
                             f'the original information, as best as possible. Try not to repeat yourself.'
